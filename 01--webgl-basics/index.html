@@ -1,0 +1,11 @@
+<link rel="stylesheet" href="/shared.css">
+<style>
+  canvas { height: 250px; width: 250px; }
+</style>
+<canvas></canvas>
+<script>
+  let canvas = document.querySelector('canvas'),
+      gl = canvas.getContext('webgl');
+  gl.clearColor(0.4, 0.6, 0.9, 1.0);
+  gl.clear(gl.COLOR_BUFFER_BIT);
+</script>
